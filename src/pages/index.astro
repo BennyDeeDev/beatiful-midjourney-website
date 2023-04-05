@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import background from "../assets/background.svg";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Navbar />
+  <Hero />
+</Layout>
+
+<style>
+  html {
+    background: url("../assets/background.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+</style>
